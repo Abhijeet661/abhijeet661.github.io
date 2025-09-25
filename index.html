@@ -3,75 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhijit Wankhede</title>
+    <title>Abhijit Wankhede | Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/logo.png">
 </head>
 <body>
-    <!-- Navbar -->
-    <nav>
-        <div class="logo">Abhijit Wankhede</div>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="resume.pdf" target="_blank">Resume</a></li>
-            <li><a href="business.html">Business</a></li>
-        </ul>
-    </nav>
+    <!-- Header / Navbar -->
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/logo.png" alt="ASW Logo">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="business.html">Business</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
-        <img src="images/profile.jpg" alt="Profile Photo" class="profile-img">
-        <h1>Abhijit Wankhede</h1>
-        <p>Full Stack Web Developer | Django, Python, React</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/abhijit-wankhede-a79675241" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Abhijeet661" target="_blank">GitHub</a>
+        <div class="hero-text">
+            <h1>Hi, I'm Abhijit Wankhede</h1>
+            <p>Full Stack Web Developer | Django, Python, React</p>
+            <a href="#resume" class="btn">View Resume</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/profile.jpg" alt="Abhijit Wankhede">
         </div>
     </section>
 
-    <!-- About -->
+    <!-- About Section -->
     <section id="about">
         <h2>About Me</h2>
         <p>Results-driven backend developer skilled in Django, Python, and PostgreSQL. Currently interning at Zidio Development and completing Web Development training at Kiran Academy.</p>
-        <p>Wardha, Maharashtra</p>
     </section>
 
-    <!-- Skills -->
+    <!-- Skills Section -->
     <section id="skills">
         <h2>Technical Skills</h2>
-        <ul class="skills-list">
-            <li>Python</li>
-            <li>Django</li>
-            <li>React</li>
-            <li>JavaScript</li>
-            <li>HTML & CSS</li>
-            <li>PostgreSQL</li>
+        <ul>
+            <li>Python, JavaScript, HTML, CSS</li>
+            <li>Django, Flask, React</li>
+            <li>PostgreSQL, SQLite</li>
+            <li>Git, GitHub, REST API Development</li>
         </ul>
     </section>
 
-    <!-- Projects -->
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="projects-grid">
-            <div class="project-card">
-                <h3>KPA API Backend</h3>
-                <p>Django + PostgreSQL. Developed production-level APIs.</p>
-            </div>
-            <div class="project-card">
-                <h3>To-Do App</h3>
-                <p>Flask + File-based storage. CRUD operations implemented.</p>
-            </div>
-            <div class="project-card">
-                <h3>Fake News Detector</h3>
-                <p>Python + Flask + ML. Real-time browser-based detection.</p>
-            </div>
-        </div>
+    <!-- Resume Section -->
+    <section id="resume">
+        <h2>Resume</h2>
+        <a href="resume.pdf" target="_blank" class="btn">Download Resume</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2025 Abhijit Wankhede | <a href="business.html">ASW Web Studio</a></p>
+        <p>Connect with me:</p>
+        <a href="https://linkedin.com/in/abhijit-wankhede-a79675241" target="_blank">LinkedIn</a>
+        <a href="https://github.com/Abhijeet661" target="_blank">GitHub</a>
+        <p>© 2025 Abhijit Wankhede | ASW Web Studio</p>
     </footer>
 
     <script src="scripts.js"></script>

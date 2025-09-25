@@ -1,33 +1,9 @@
-// Smooth scrolling for anchor links
+// Smooth scroll for links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
+    anchor.addEventListener('click', function(e){
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if(target) {
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-        }
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
     });
-});
-
-// Add simple fade-in effect on scroll
-const sections = document.querySelectorAll('section');
-const options = {
-    threshold: 0.2
-};
-
-const observer = new IntersectionObserver((entries, observer) => {
-    entries.forEach(entry => {
-        if(entry.isIntersecting) {
-            entry.target.classList.add('fade-in');
-            observer.unobserve(entry.target);
-        }
-    });
-}, options);
-
-sections.forEach(section => {
-    section.classList.add('fade-section');
-    observer.observe(section);
 });
