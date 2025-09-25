@@ -1,62 +1,112 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASW Web Studio | Business</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="images/logo.png">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>ASW Web Studio — Services</title>
+  <meta name="description" content="ASW Web Studio — Web & App Development, AWS Deployment, Social Media Handling." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="static/logo.jpg" />
 </head>
-<body>
-    <header>
-        <nav>
-            <div class="logo">
-                <img src="images/logo.png" alt="ASW Logo">
-            </div>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="dark">
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" aria-label="Home">
+        <div class="brand-logo" role="img" aria-hidden="true"></div>
+        <span class="brand-text">ASW Web Studio</span>
+      </a>
 
-    <!-- Hero Section -->
-    <section class="hero hero-business">
-        <div class="hero-text">
-            <h1>Welcome to ASW Web Studio</h1>
-            <p>Web & App Development | Social Media Handling | IT Services</p>
+      <nav class="main-nav">
+        <a class="nav-link" href="index.html">Home</a>
+        <a class="nav-link active" href="business.html">Business</a>
+        <a class="nav-link" href="#services">Services</a>
+        <a class="nav-link" href="#contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="icon" href="mailto:info@abhijitwankhede.com">Email</a>
+        <button id="mobile-menu-btn-2" class="hamburger" aria-label="Toggle menu">☰</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="mobile-nav-2" class="mobile-nav" aria-hidden="true">
+    <a href="index.html">Home</a>
+    <a href="business.html">Business</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <main>
+    <section class="hero panel hero-business">
+      <div class="hero-right">
+        <h1>ASW Web Studio</h1>
+        <p class="tagline">We build production web apps, mobile experiences and manage social growth.</p>
+
+        <div class="cta-row">
+          <a class="btn primary" href="#services">Our Services</a>
+          <a class="btn outline" href="#contact">Request Quote</a>
         </div>
+      </div>
     </section>
 
-    <!-- Services -->
-    <section id="services">
-        <h2>Our Services</h2>
-        <div class="services-container">
-            <div class="service-card">Full Stack Web Development</div>
-            <div class="service-card">Mobile App Development</div>
-            <div class="service-card">Social Media Management</div>
+    <section id="services" class="panel">
+      <h2>Services</h2>
+      <div class="cards">
+        <div class="service-card">
+          <h3>Web Development</h3>
+          <p>End-to-end full-stack solutions using Django (backend) and React (frontend). Scalable and tested.</p>
+          <div class="muted">Django · React · PostgreSQL</div>
         </div>
+
+        <div class="service-card">
+          <h3>AWS / Cloud Deployment</h3>
+          <p>Reliable deployments, CI/CD and server configuration for production uptime and security.</p>
+          <div class="muted">AWS · EC2 · S3 · RDS</div>
+        </div>
+
+        <div class="service-card">
+          <h3>Social Media Handling</h3>
+          <p>Strategy, content calendars and growth for platforms like Instagram and Facebook.</p>
+          <div class="muted">Instagram · Content · Ads</div>
+        </div>
+      </div>
     </section>
 
-    <!-- Contact -->
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: info@abhijitwankhede.com</p>
-        <p>Phone: 7666476145</p>
+    <section id="portfolio" class="panel">
+      <h2>Portfolio & Demos</h2>
+      <div class="grid">
+        <div class="mini-card">
+          <div class="mini-media" style="background-image: linear-gradient(135deg,#0071e3,#00c6ff)"></div>
+          <div class="mini-body"><strong>Marketing Site</strong><div class="muted">Static marketing site</div></div>
+        </div>
+
+        <div class="mini-card">
+          <div class="mini-media" style="background-image: linear-gradient(135deg,#e1306c,#ff7aa2)"></div>
+          <div class="mini-body"><strong>To-Do App</strong><div class="muted">Flask CRUD demo</div></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <img src="images/logo.png" alt="ASW Logo" class="footer-logo">
-        <p>Connect with us:</p>
-        <div class="social-links">
-            <a href="https://linkedin.com/in/abhijit-wankhede-a79675241" target="_blank">LinkedIn</a>
-            <a href="https://github.com/Abhijeet661" target="_blank">GitHub</a>
-        </div>
-        <p>© 2025 ASW Web Studio</p>
-    </footer>
+    <section id="contact" class="panel">
+      <h2>Contact & Quote</h2>
+      <p class="panel-desc">Email us for a quote: <a class="link" href="mailto:info@abhijitwankhede.com">info@abhijitwankhede.com</a></p>
+      <p class="panel-desc">Or call: <strong>7666476145</strong></p>
+    </section>
+  </main>
 
-    <script src="scripts.js"></script>
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo" aria-hidden="true"></div>
+        <div class="copyright">© 2025 ASW Web Studio</div>
+      </div>
+      <div>
+        <a class="link" href="https://github.com/Abhijeet661" target="_blank">GitHub</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
