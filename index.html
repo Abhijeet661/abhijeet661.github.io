@@ -1,99 +1,80 @@
-<!--
-  READY-TO-USE personal index.html for GitHub Pages
-  - Open this file, replace the placeholder text (NAME, BIO, LINKS, IMAGE) with your details
-  - Save as index.html and push to a repo named: abhijeet661.github.io
-  - For custom domain add a CNAME file containing your domain (abhijitwankhede.com) or set it in GitHub Pages settings
--->
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>YOUR NAME — Portfolio</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root{--bg:#f7f8fb;--card:#ffffff;--muted:#6b7280;--accent:#0ea5a0}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial; background:var(--bg); color:#0f172a}
-    .wrap{max-width:920px;margin:40px auto;padding:28px}
-    header{display:flex;align-items:center;justify-content:space-between}
-    .brand{font-weight:700;font-size:18px}
-    nav a{margin-left:18px;text-decoration:none;color:var(--muted);font-weight:600}
-    .hero{display:flex;gap:28px;align-items:center;margin-top:28px}
-    .avatar{width:140px;height:140px;border-radius:14px;background:linear-gradient(135deg,#eef2ff,#fff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--muted)}
-    h1{margin:0;font-size:32px}
-    p.lead{color:var(--muted);margin-top:8px;max-width:640px}
-    .buttons{margin-top:18px}
-    .btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600;margin-right:10px}
-    .btn-primary{background:var(--accent);color:white}
-    .btn-ghost{background:transparent;border:1px solid rgba(15,23,42,0.06);color:var(--muted)}
-
-    .card{background:var(--card);border-radius:12px;padding:18px;margin-top:28px;box-shadow:0 6px 18px rgba(12,14,20,0.04)}
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:14px}
-    .proj{padding:14px;border-radius:10px;background:linear-gradient(180deg,rgba(14,165,160,0.04),transparent)}
-    .muted{color:var(--muted)}
-    footer{margin-top:32px;text-align:center;color:var(--muted);font-size:14px;padding-bottom:28px}
-
-    @media (max-width:640px){.hero{flex-direction:column;align-items:flex-start}.avatar{width:110px;height:110px}}
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abhijit Wankhede</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">YOUR NAME</div>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
-      </nav>
-    </header>
 
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">Abhijit Wankhede</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="resume.pdf" download>Resume</a></li>
+            <li><a href="business.html">ASW Web Studio</a></li>
+            <li><a href="https://linkedin.com/in/abhijit-wankhede-a79675241" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Abhijeet661" target="_blank">GitHub</a></li>
+            <li><a href="https://instagram.com/" target="_blank">Instagram</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
     <section class="hero">
-      <div class="avatar">IMG</div>
-      <div>
-        <h1>Hi, I'm <span id="name">YOUR NAME</span></h1>
-        <div class="muted" style="margin-top:6px;font-weight:600">Full‑stack developer — Python · Django · React</div>
-        <p class="lead">Short bio / one-liner about you. Example: I build web apps and small automation tools. I love clean code and fast UIs. Replace this with your own intro.</p>
-        <div class="buttons">
-          <a class="btn btn-primary" href="#contact">Contact me</a>
-          <a class="btn btn-ghost" href="#projects">See projects</a>
+        <h1>Hi, I'm Abhijit Wankhede</h1>
+        <p>Full-Stack Web Developer | Django, Python, React | Backend & Frontend Expert</p>
+        <div class="hero-buttons">
+            <a href="#projects" class="btn">See Projects</a>
+            <a href="resume.pdf" class="btn" download>Download Resume</a>
         </div>
-      </div>
     </section>
 
-    <section id="about" class="card">
-      <h3>About me</h3>
-      <p class="muted">Write 2–3 lines about your education, skills, and what you are looking for. Example: B.Tech (CSE). Currently learning Django and building full‑stack projects. Open to remote internships and junior dev roles.</p>
+    <!-- About Section -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Results-driven backend developer skilled in Django, Python, and PostgreSQL. Currently interning at Zidio Development and completing Web Development training at Kiran Academy. Eager to contribute to real-world software solutions.</p>
+        <div class="skills">
+            <span>Python</span>
+            <span>Django</span>
+            <span>React</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>JavaScript</span>
+            <span>PostgreSQL</span>
+        </div>
     </section>
 
-    <section id="projects" class="card">
-      <h3>Projects</h3>
-      <div class="grid">
-        <div class="proj">
-          <strong>Project 1</strong>
-          <div class="muted">Short description — what tech you used and what problem it solves.</div>
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="portfolio-grid">
+            <div class="project-card">
+                <img src="images/project1.png" alt="KPA API Backend">
+                <h3>KPA API Backend</h3>
+                <p>Developed two production-level APIs using Django and PostgreSQL.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.png" alt="To-Do App">
+                <h3>To-Do App</h3>
+                <p>Task manager web app built with Flask and CRUD operations.</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project3.png" alt="Fake News Detector">
+                <h3>Fake News Detector</h3>
+                <p>Real-time app predicting fake news using Python, Flask, and ML integration.</p>
+            </div>
         </div>
-        <div class="proj">
-          <strong>Project 2</strong>
-          <div class="muted">Short description — link to repo or live site.</div>
-        </div>
-        <div class="proj">
-          <strong>Project 3</strong>
-          <div class="muted">Short description.</div>
-        </div>
-      </div>
     </section>
 
-    <section id="contact" class="card">
-      <h3>Contact</h3>
-      <p class="muted">Email: <a href="mailto:you@example.com">you@example.com</a> · GitHub: <a href="https://github.com/yourusername">@yourusername</a></p>
-      <p class="muted">Replace the email and links above with your real ones.</p>
-    </section>
-
+    <!-- Footer -->
     <footer>
-      Made with ❤️ — Replace this page with your content. © YOUR NAME
+        <p>&copy; 2025 Abhijit Wankhede. All rights reserved.</p>
     </footer>
-  </div>
+
+    <script src="scripts.js"></script>
 </body>
-</html>ls
+</html>
